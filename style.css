@@ -314,21 +314,24 @@ button:active {
 
 .staff{
     display: flex;
-    /* flex-wrap: wrap; */
-    width: 29%;
+    flex-wrap: wrap;
+/*     width: 29%; */
     background: white;
-    justify-content: space-between;
-    padding: 2rem;
-    margin: 1rem;
+    justify-content: center;
+/*     padding: 2rem; */
+    padding: 1rem;
+/*     margin: 1rem; */
+    
 }
 
 .staffPics{
     height: 35vh;
-    width: 25vw;
+    width: 30%;
     background: grey;
     position: relative;
     border-radius: .3rem;
     justify-content: center;
+    margin:1rem;
 }
 
 .stylist1{
@@ -394,7 +397,7 @@ button:active {
     background: #363062;
     color:  #E9D5DA;
     /* text-shadow:   #f7b0ae 2px 2px 3px; */
-    /* height: 85vh; */
+    height: 85vh;
     text-align: center;
     padding: 2rem;
     padding-bottom: 4rem;
