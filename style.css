@@ -183,18 +183,15 @@ li:hover{
 }
 
 .tricky > *, h2, h3{
-    display: inline;
-    margin-bottom: .8rem;
+    display: inline-block;
+    /* margin-bottom: .8rem; */
 }
 
-.offer{
+/* .offer{
     /* margin-bottom: .7rem; */
-}
+/* 
+/*  */
 
-.trickyButton{
-    /* justify-items: center; */
-    /* transform: translateX(30%); */
-}
 
 button{
     margin:  1rem 0 ;
@@ -237,6 +234,8 @@ button:active {
     flex-wrap: wrap;
     /* text-align: center */
     /* background-color: red; */
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
 .three section{
@@ -244,6 +243,8 @@ button:active {
     /* width: 100%; */
     /* background: #363062; */
     margin: 1rem;
+    text-align: start
+    /* width: 80vw; */
     /* flex-wrap: wrap; */
 
 }
@@ -252,8 +253,8 @@ button:active {
     padding: 0 2rem 0rem 0;
     /* margin-bottom: 4rem; */
     /* justify-content: center; */
-    text-align: center;;
-    flex: 1;
+    text-align: center;
+    /* flex: 1; */
 }
 
 .three i{
@@ -261,7 +262,7 @@ button:active {
     opacity: .2;
     /* transform: translateX(33%); */
     margin: 1rem;
-    margin-bottom: rem;;
+    /* margin-bottom: rem;; */
     display: block;
 }
 
@@ -308,7 +309,7 @@ button:active {
     background-image: url('assets/images/shyLady.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x:80% ;
+    background-position-x:70% ;
     /* background-blend-mode: color */
 }
 
@@ -316,41 +317,49 @@ button:active {
     display: flex;
     flex-wrap: wrap;
 /*     width: 29%; */
-    background: white;
+    background: #e9d5da;
     justify-content: center;
+    /* align-items: center; */
 /*     padding: 2rem; */
     padding: 1rem;
+    position: relative;
+    /* width: 70%; */
 /*     margin: 1rem; */
     
 }
 
 .staffPics{
     height: 35vh;
-    width: 30%;
-    background: grey;
-    position: relative;
+    /* width: 70%; */
+    min-width: 30%;
+     background: #e9d5da; 
+   position: relative;
     border-radius: .3rem;
     justify-content: center;
     margin:1rem;
+    display: flex;
+    /* border-radius: .3rem; */
 }
 
+.staffPics img{
+    /* width: ; */
+    height: 100%;
+    border-radius: .3rem;
+    
+}
+
+@media screen and (max-width:720px){
+    .staffPics{
+        width:70%;
+        /* height: 100%; */
+    }
+
+}
+/* 
 .stylist1{
     background-image: url('assets/images/stylist1.jpg');
-    background-size: cover;
+    /* background-size: cover; */
     /* z-index: 4;; */
-}
-
-.stylist2{
-    background-image: url('assets/images/stylist2.jpg');
-    background-size: cover;
-}
-
-.stylist3{
-    background-image: url('aassets/images/stylist3.jpg');
-    height: 100%;
-    width:33%;
-    background-size: cover;
-}
 
 .staffNames{
     position: absolute;
@@ -402,6 +411,7 @@ button:active {
     padding: 2rem;
     padding-bottom: 4rem;
     box-sizing: border-box;
+    /* max-width: ; */
     /* flex-wrap: wrap; */
     /* display: flex; */
 }
@@ -434,7 +444,7 @@ button:active {
 
     /* height: max-content; */
     /* background-size: ; */
-    object-fit:;
+    
     overflow: hidden;
     /* box-sizing: border-box; */
 } 
@@ -487,6 +497,10 @@ background-position-x: 60% ;
 
 .img6{
 background-image: url(assets/images/lookbook5.jpg);
+background-image-repeat: no-repeat; 
+background-position-x: -3rem;
+/* background-repeat: no-repeat; */
+/* transform: translateX(-1rem) */
 }
 
 footer{
@@ -521,7 +535,28 @@ footer{
 } 
 
 @media (min-width: 720px){
+
+    body{
+        padding: 1rem 5rem;
+    }
     nav div + div{
         display: visible;
     }
+
+    .discount{
+        height:50vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        /* align-self: center; */
+        justify-self: center;
+        width:100%;
+        transform: translateX(25%)
+    }
+
+    .lookbook{
+        padding:3% 30%;
+        /* padding-bottom: 1rem; */
+        border-radius: .3rem;
+    }
+
 }
