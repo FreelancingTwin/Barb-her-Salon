@@ -11,6 +11,7 @@
     font-weight:600;
     text-transform: capitalize;
     -webkit-tap-highlight-color: transparent;
+    transition: all .3s ease-in-out;
 
 }
 
@@ -35,7 +36,7 @@ a{
 .linkVisible{
     text-decoration: underline wavy 1.5px  #363062;; 
     color: #363062;
-    transition: .3s ease;
+    transition: .3s ease-in-out;
 
 }
 
@@ -65,7 +66,7 @@ body{
     /* background: red; */
     /* background: whitesmoke; */
     background: #E9D5DA;
-    transition: all .3s ease;
+    transition: all .3s ease-in-out;
     /* height: 100%; */
     overflow-x: hidden;
 }
